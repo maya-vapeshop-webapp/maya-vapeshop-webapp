@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 :root {
     --tg-theme-bg-color: #0f0f1a;
     --tg-theme-text-color: #ffffff;
