@@ -12,7 +12,7 @@ if (tg) {
 }
 
 // ⚡ Замените на ваш актуальный API_URL
-const API_URL = "https://maya-vapeshop-webapp.vercel.app/";
+const API_URL = "http://testwebappmaya.alwaysdata.net/";
 
 let products = [];
 let cart = {}; // ключ: product.id
