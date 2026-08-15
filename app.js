@@ -12,7 +12,7 @@ if (tg) {
 }
 
 // ⚡ Замените на ваш актуальный API_URL
-const API_URL = "http://testwebappmaya.alwaysdata.net/";
+const API_URL = "https://testwebappmaya.alwaysdata.net/api/products";
 
 let products = [];
 let cart = {}; // ключ: product.id
