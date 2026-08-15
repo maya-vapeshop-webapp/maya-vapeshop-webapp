@@ -10,11 +10,16 @@
     <div class="app">
         <header class="header">
             <div class="logo">💨 Maya VapeShop</div>
-            <p class="subtitle">Выбери что-то из ассортимента</p>
+            <p class="subtitle">Выбери свой идеальный девайс</p>
         </header>
 
+        <!-- Панель категорий -->
+        <div class="categories" id="categoriesBar"></div>
+
+        <!-- Каталог -->
         <div id="catalog" class="catalog"></div>
 
+        <!-- Корзина -->
         <div class="cart-panel" id="cartPanel">
             <div class="cart-panel__header" id="cartToggle">
                 <span>🛒 Корзина</span>
@@ -29,11 +34,20 @@
                 <div class="customer-info">
                     <input type="text" id="nameInput" placeholder="Ваше имя" autocomplete="name">
                     <input type="tel" id="phoneInput" placeholder="Телефон" autocomplete="tel">
-                    <textarea id="commentInput" placeholder="Комментарий к заказу (необязательно)" rows="2"></textarea>
+                    <textarea id="commentInput" placeholder="Комментарий (необязательно)" rows="2"></textarea>
                 </div>
-                <button class="checkout-btn" id="checkoutBtn">📦 Оформить заказ</button>
+                <button class="checkout-btn" id="checkoutBtn">📦 Подтвердить заказ</button>
                 <div class="cart-empty" id="cartEmpty">Корзина пуста</div>
             </div>
+        </div>
+    </div>
+
+    <!-- Модальное окно выбора вкуса -->
+    <div class="modal hidden" id="flavorModal">
+        <div class="modal-content">
+            <h3>Выберите вкус</h3>
+            <div id="flavorList" class="flavor-list"></div>
+            <button class="modal-close" onclick="closeFlavorModal()">Отмена</button>
         </div>
     </div>
 
